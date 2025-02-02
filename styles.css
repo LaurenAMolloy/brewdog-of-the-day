@@ -1,0 +1,257 @@
+/* styles.css */
+:root {
+    --dark-green: #3D4547;
+    --olive-green: #9C9F52;
+    --red-wine: #842B2F;
+    --soft-pink: #ECD0C2;
+    --light-gray: #EDEEE9;
+    --dark-green-hover: #2E3638;
+    /* Slightly darker shade of dark green */
+    --olive-green-hover: #7E8042;
+    /* Slightly darker shade of olive green */
+    --red-wine-hover: #6E2328;
+    /* Slightly darker shade of red wine */
+    --soft-pink-hover: #DAB8A8;
+    /* Slightly darker shade of soft pink */
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", serif;
+    background-color: var(--light-gray);
+    color: var(--dark-green);
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: var(--dark-green);
+    color: var(--light-gray);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-input,
+#mealType {
+    width: 70%;
+}
+
+#search-input {
+    margin-bottom: 20px;
+}
+
+#mealType {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid var(--olive-green);
+    border-radius: 8px;
+    flex: 1;
+    width: 50%;
+}
+
+#mealType {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid var(--olive-green);
+    border-radius: 8px;
+    flex: 1;
+    width: 50%;
+}
+
+.search button {
+    background-color: var(--olive-green);
+    color: var(--light-gray);
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.search button:hover {
+    background-color: var(--olive-green-hover);
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+}
+
+#reset-btn {
+    background-color: var(--red-wine);
+    color: var(--light-gray);
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    width: 50%;
+    margin: 10px auto;
+}
+
+#reset-btn:hover {
+    background-color: var(--red-wine-hover);
+    transform: scale(1.05);
+}
+
+.search-bar button:hover {
+    background-color: var(--olive-green);
+}
+
+button[disabled] {
+    opacity: 0.2;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding-top: 20px;
+}
+
+.recipe h2 {
+    min-height: 60px;
+    /* Ensures uniform space for headings */
+    margin-bottom: 8px;
+
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe img {
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.getRecipeBtn {
+    background-color: var(--soft-pink);
+    color: var(--dark-green);
+    padding: 10px 1cqi;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    width: 60%;
+    margin: 10px 0px;
+}
+
+.getRecipeBtn:hover {
+    background-color: var(--soft-pink-hover);
+    transform: scale(1.05);
+}
+
+/* Disabled Button */
+button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.search-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.search-options label {
+    font-size: 14px;
+    color: var(--soft-pink);
+    cursor: pointer;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    color: #aaa;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
