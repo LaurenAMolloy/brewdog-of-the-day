@@ -238,6 +238,10 @@ button[disabled] {
     width: 80%;
 }
 
+span {
+    font-weight: 900;
+}
+
 /* The Close Button */
 .close {
     position: absolute;

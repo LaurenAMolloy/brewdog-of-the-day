@@ -10,15 +10,20 @@ export function handleClickOpenModal(e) {
     const ingredients = recipeElement.dataset.ingredients;
     const instructions = recipeElement.dataset.instructions;
     
-    const transformArray = instructions.split(".");
-    
+    const transformInstructionArr = instructions.split(".").slice(0, -1);
+    const ingredientsArr = ingredients.split(/\s*,\s*/);
+
+
     const modalHtml = `
     <span class="close">&times;</span>
     <h2>Ingredients</h2>
-    <p>Ingredients: ${ingredients}</p>
+    <ul>
+     ${ingredientsArr.map(item => `<li>${item}</li>`).join("")}
+    </ul>
+
     <h2>Instructions</h2>
     <ul>
-         ${transformArray.map(instruction => `<li>${instruction.trim().replace(/^,/, '')}</li>`).join('')}
+         ${transformInstructionArr.map(instruction => `<li>${instruction.trim().replace(/^,/, '')}</li>`).join('')}
      </ul>
     `;
     
