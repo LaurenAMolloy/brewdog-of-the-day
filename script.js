@@ -6,14 +6,13 @@ const beerCard = document.querySelector('.beer-container');
 const imgContainer = document.querySelector('.img-container');
 //Retreive submit element
 const submitBtn = document.querySelector('input[type="submit"]');
+//Retrieve loader
+const loader = document.querySelector('.loader');
 
 //Api url and end point
 const BASEURL = 'https://punkapi.online/v3/';
 const randomEndPoint = 'beers/random';
 
-
-//Retrieve loader
-const loader = document.querySelector('.loader');
 //Retrieve the error message
 const errorMessage = document.querySelector('#error-message');
 //Retrieve typed haeding container

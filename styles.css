@@ -71,9 +71,9 @@ body {
 
 .form-container {
     background-color: var(--pale-blue);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 2rem;
-    min-height: 95vh;
+    min-height: 90vh;
     /* box with blur */
     box-shadow: 10px 10px 5px lightblue;
 }
@@ -147,7 +147,7 @@ span#sentence.sentence {
 input#submit {
     border-radius: 2rem;
     padding: .5rem 1rem;
-    margin: 3rem 0;
+    margin: 1rem 0;
     font-family: "Outfit", serif;
     background-color: var(--orange);
     border: 2px solid white;
