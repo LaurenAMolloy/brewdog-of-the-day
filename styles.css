@@ -78,6 +78,10 @@ body {
     box-shadow: 10px 10px 5px lightblue;
 }
 
+form {
+    padding-top: 1rem;
+}
+
 
 .beer-container {
     max-width: 100%;
@@ -116,8 +120,9 @@ span#sentence.sentence {
     font-size: 2rem;
 }
 
-/* Loader */
 
+
+/* Loader */
 
 .lds-ripple,
 .lds-ripple div {
@@ -144,28 +149,35 @@ span#sentence.sentence {
     animation-delay: -0.5s;
 }
 
-input#submit {
+button#submit {
     border-radius: 2rem;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     margin: 1rem 0;
     font-family: "Outfit", serif;
     background-color: var(--orange);
     border: 2px solid white;
     color: navy;
+    max-width: 100%;
+    word-break: break-word;
+    white-space: normal;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
-input#submit:hover {
+button#submit:hover {
     color: white;
     background-color: Teal;
 }
 
-input#submit:focus {
+button#submit:focus {
     outline: 3px solid #FFD700;
     /* Gold */
     outline-offset: 2px;
 }
 
-input#submit[disabled] {
+button#submit[disabled] {
     opacity: 0.2;
 }
 

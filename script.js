@@ -5,7 +5,7 @@ const beerCard = document.querySelector('.beer-container');
 //Retreive img element
 const imgContainer = document.querySelector('.img-container');
 //Retreive submit element
-const submitBtn = document.querySelector('input[type="submit"]');
+const submitBtn = document.querySelector('#submit');
 //Retrieve loader
 const loader = document.querySelector('.loader');
 
@@ -149,7 +149,7 @@ function randomButtonText(arr) {
     const randomText = arr[Math.floor(Math.random()*buttonText.length)];
     console.log(randomText);
     //update the button with the random item
-    submitBtn.value = randomText;
+    submitBtn.textContent = randomText;
 }
    
 typeSentence("Do You Feel Lucky?", typedHeadingEl);
