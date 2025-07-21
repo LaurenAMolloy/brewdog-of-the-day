@@ -25,9 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
-![](./src/assets/)
-![](./src/assets/)
+![](brew-dog1.png)
+![](brew-dog2.png)
+![](brew-dog3.png)
 
 ### Links
 
