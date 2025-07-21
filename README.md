@@ -19,9 +19,9 @@ This original project that this app is based on was part of the WesBos JavaScrip
 
 Users should be able to:
 
--Request a new random beer
--Recieve a new random beer
--Also recieve a new beer related quote in the button text
+- Request a new random beer
+- Recieve a new random beer
+- Also recieve a new beer related quote in the button text
 
 ### Screenshot
 
@@ -44,11 +44,18 @@ Users should be able to:
 ### What I learned
 
 I have learnt so many new skills and concepts during the build of this project. 
+- DOM Manipulation
+- Fetching data and displaying data from API's
+- Events
+- Async Functions
+- Using Template Literals
+- Set Timeout
+- Math Methods
 
 
 ### Continued development
 
-Moving forward I would like to continue learning about and experiment more with integrating data from API's. I would like to migrate some of my vanilla js projects into React projects to get more experinec working with SPA's.
+Moving forward I would like to continue learning about and experiment more with integrating data from API's. I would like to migrate some of my vanilla js projects into React projects to get more experience working with SPA's.
 
 ### Useful resources
 
