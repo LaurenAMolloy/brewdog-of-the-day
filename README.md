@@ -25,13 +25,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./src/assets/)
+![]()
 ![](./src/assets/)
 ![](./src/assets/)
 
 ### Links
 
-- Solution URL: ()
+- Solution URL: (https://github.com/LaurenAMolloy/brewdog-of-the-day)
 - Live Site URL: (https://brewdog-of-the-day.onrender.com/)
 
 ### Built with
