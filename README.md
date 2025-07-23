@@ -1,4 +1,4 @@
-# Brewdog of the Day - A fun "Brewdog" themed app based on the classic random quote generator!
+# Brewdog of the Day - A fun "Brewdog" themed SPA based on the classic random quote generator!
 
 ## Table of contents
 
@@ -55,7 +55,7 @@ Skills and concepts used in the build of this project.
 
 ### Continued development
 
-Moving forward I would like to continue learning about and experiment more with integrating data from API's. I would like to migrate some of my vanilla js projects into React projects to get more experience working with SPA's.
+Moving forward I would like to continue learning about and experiment more with integrating data from API's. I would like to migrate some of my vanilla js projects into React projects to get more experience working with SPA's and MPA's. I could also improve this project by adding a dark theme toggle.
 
 ### Useful resources
 
