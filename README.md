@@ -8,13 +8,14 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [Skills](#skills)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 
 ## Overview
 
-This original project that this app is based on was part of the WesBos JavaScript Course. I have made quite a few changes to the original app to practice skills I learnt during the course and beyond. The main changes I made were changing the API, adding a typing effect and adding a loader.
+This is a mash up of the random word generator. While I am not an advocate for drinking daily, infact I am t-total, but this API was just too cute to ignore. 
+
 ### The challenge
 
 Users should be able to:
@@ -41,9 +42,9 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 
-### What I learned
+### Skills
 
-I have learnt so many new skills and concepts during the build of this project. 
+Skills and concepts used in the build of this project. 
 - DOM Manipulation
 - Fetching data and displaying data from API's
 - Events
@@ -51,7 +52,6 @@ I have learnt so many new skills and concepts during the build of this project.
 - Using Template Literals
 - Set Timeout
 - Math Methods
-
 
 ### Continued development
 
